@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Timeline - Elm</title>
+</head>
+<body>
+<script type="text/javascript" src="../js/loader.js"></script>  
+
+<script type="text/javascript">  
+    google.charts.load("current", {packages:["timeline"]});  
+    google.charts.setOnLoadCallback(drawChart);  
+    function drawChart() {  
+        var container = document.getElementById('assemblyToElm');  
+        var chart = new google.visualization.Timeline(container);  
+        var dataTable = new google.visualization.DataTable();  
+        dataTable.addColumn({ type: 'string', id: 'Name'  });  
+        dataTable.addColumn({ type: 'string', id: 'NameSub'  });  
+        dataTable.addColumn({ type: 'date', id: 'Start'  });  
+        dataTable.addColumn({ type: 'date', id: 'End'  });
+
+        dataTable.addRows([
+            ['Assembly', 'Assembly (1949)',new Date(1949,6,1),new Date() ],
+            ['B/C', 'B (1969)',new Date(1969,6,1),new Date(1972,5,1) ],
+            ['B/C', 'C (1972)',new Date(1972,6,1),new Date() ],
+            ['Java', 'Java (1995)',new Date(1995,5,23),new Date() ],
+            ['JavaScript', 'JavaScript (1995)',new Date(1995,5,23),new Date() ],
+            ['Elm', 'Elm (2012)',new Date(2012,4,1),new Date() ],
+        ]);
+
+
+        var options = {
+            timeline: { showRowLabels: false },
+        };
+
+    chart.draw(dataTable, options);  
+}
+</script>
+
+<div onresize="chart.draw(dataTable, options);" id="assemblyToElm" style="height:300px;margin:0 calc(55% - 50vw);"></div>
+
+</body>
+</html>
