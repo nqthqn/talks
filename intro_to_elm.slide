@@ -1,0 +1,85 @@
+###
+Intro to Elm
+Fast and free of runtime exceptions
+23 Feb 2017
+Tags: introduction, getting started
+
+
+###
+Nate Nichols
+Engineer, LUMA
+info@luma.studio
+https://github.com/nqthqn
+@lumanate
+
+
+###
+* I found something amazing.
+.image img/mZ4Da3GTSep6o.gif
+
+#--
+* Timeline
+
+TODO: insert picture of timeline (Elm 0.1 (Initial Release) - April 2012)
+
+#--
+* What is it?
+
+.link http://elm-lang.org elm-lang.org
+
+- Elm compiles to JavaScript. Elm uses type inference to detect problems during compilation. 
+- NoRedInk has 36k lines of Elm, and after more than a year in production, it still has not produced a single runtime exception. 
+- Elm has its own virtual DOM implementation, designed for simplicity and speed. All values are immutable in Elm, and the benchmarks show that this helps us generate particularly fast JavaScript code. 
+- No more surprises in PATCH releases! Enforced Semantic Versioning. Elm can detect all API changes automatically thanks to its type system. We use that information to force everything in our package catalog to follow semantic versioning precisely. 
+
+
+
+#--
+* So fast
+
+.image http://elm-lang.org/assets/blog/virtual-dom-charts/everyone.png
+.link https://evancz.github.io/react-angular-ember-elm-performance-comparison/
+
+
+###
+* Some really neat things!
+
+#--
+* Time Travelling Debugger
+
+.image img/debug.png
+.link http://debug.elm-lang.org/edit/Mario.elm
+
+#--
+* And more...
+
+- elm reactor  —  downloads required packages, builds your elm app and serves it
+- elm repl  —  try out some elm on the command line
+- elm format  —  auto formats your code to specified standard
+.link https://ellie-app.com/ Ellie
+Ellie puts the Elm platform in your browser so you can try Elm, share ideas, and bring your programs to life.
+.link http://package.elm-lang.org/ Elm Packages
+Search for packages, docs and source code
+
+
+###
+* Elm Architecture
+
+
+#--
+* Let's juggle!
+
+- Model
+- Update
+- View
+
+
+#--
+* DEMO
+
+- let's write some elm!
+
+#--
+* Still don't like it?
+
+.image img/sRMPFaVQLGSw8.gif
