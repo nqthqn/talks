@@ -18,9 +18,12 @@ https://nqthqn.com/
 .image img/mZ4Da3GTSep6o.gif
 
 #--
-* Timeline
+* Timeline (Assembly To Elm)
+.iframe html/assemblyToElm.html 360 960
 
-TODO: insert picture of timeline (Elm 0.1 (Initial Release) - April 2012)
+#--
+* Timeline (Elm Releases)
+.iframe html/elmHistory.html 800 960
 
 #--
 * What is it?
